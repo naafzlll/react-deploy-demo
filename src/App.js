@@ -17,7 +17,7 @@ function App() {
       <section className="hero">
         <div className="hero-content">
           <h1>Halo, Saya <span className="highlight">Naufal Daib Rizal</span> 👋</h1>
-          <p>Web Developer | Videographer | Photograper</p>
+          <p>Web Developer | Videographer | Photographer</p>
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">Hubungi Saya</a>
             <a href="#skills" className="btn btn-outline">Lihat Skills</a>
