@@ -16,8 +16,8 @@ function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Halo, Saya <span className="highlight">Nama Kamu</span> 👋</h1>
-          <p>Web Developer | React Enthusiast | Creative Thinker</p>
+          <h1>Halo, Saya <span className="highlight">Naufal Daib Rizal</span> 👋</h1>
+          <p>Web Developer | Videographer| Photograper</p>
           <div className="hero-buttons">
             <a href="#contact" className="btn btn-primary">Hubungi Saya</a>
             <a href="#skills" className="btn btn-outline">Lihat Skills</a>
@@ -29,7 +29,7 @@ function App() {
       <section id="about" className="section">
         <h2 className="section-title">Tentang Saya</h2>
         <div className="about-card">
-          <p>Saya adalah seorang web developer yang passionate dalam membangun aplikasi web modern dan responsif. Saya suka belajar teknologi baru dan menciptakan pengalaman pengguna yang menarik.</p>
+          <p>Saya adalah seorang mahasiswa teknik informatika</p>
         </div>
       </section>
 
@@ -49,9 +49,9 @@ function App() {
       <section id="contact" className="section">
         <h2 className="section-title">Kontak</h2>
         <div className="contact-card">
-          <p>📧 email@kamu.com</p>
-          <p>💼 linkedin.com/in/namakamu</p>
-          <p>🐙 github.com/namakamu</p>
+          <p>📧 naufal@kamu.com</p>
+          <p>💼 linkedin.com/in/naufal</p>
+          <p>🐙 github.com/naufal daib rizal</p>
         </div>
       </section>
 
