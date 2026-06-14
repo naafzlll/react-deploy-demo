@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f1a;
+  color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ===== HEADER ===== */
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 60px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.App-link {
+.logo {
+  font-size: 24px;
+  font-weight: 700;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #61dafb;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(ellipse at center, #1a1a3e 0%, #0f0f1a 70%);
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #a0a0b0;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #61dafb;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #61dafb;
+  color: #0f0f1a;
+}
+
+.btn-primary:hover {
+  background: #4fc3e8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(97,218,251,0.4);
+}
+
+.btn-outline {
+  border: 2px solid #61dafb;
+  color: #61dafb;
+}
+
+.btn-outline:hover {
+  background: rgba(97,218,251,0.1);
+  transform: translateY(-2px);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #61dafb;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #61dafb;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== ABOUT ===== */
+.about-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(97,218,251,0.2);
+  border-radius: 16px;
+  padding: 40px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  color: #c0c0d0;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(97,218,251,0.08);
+  border: 1px solid rgba(97,218,251,0.3);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #61dafb;
+  transition: all 0.3s;
+}
+
+.skill-card:hover {
+  background: rgba(97,218,251,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(97,218,251,0.2);
+}
+
+/* ===== CONTACT ===== */
+.contact-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(97,218,251,0.2);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  font-size: 18px;
+  color: #c0c0d0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #606070;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
   }
-  to {
-    transform: rotate(360deg);
+  .hero h1 {
+    font-size: 32px;
+  }
+  .section {
+    padding: 60px 24px;
   }
 }
