@@ -49,7 +49,7 @@ function App() {
       <section id="contact" className="section">
         <h2 className="section-title">Kontak</h2>
         <div className="contact-card">
-          <p>📧 naufal@kamu.com</p>
+          <p>📧 naufal@gmail.com</p>
           <p>💼 linkedin.com/in/naufal</p>
           <p>🐙 github.com/naufal daib rizal</p>
         </div>
